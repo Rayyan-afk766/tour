@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Blogs - Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>🌍 Explore Amazing Places</h1>
+    <button id="modeToggle">🌙</button>
+  </header>
+
+  <section class="places-gallery">
+    <div class="place" onclick="openPopup('paris')">
+      <img src="images/paris.jpg" alt="Paris">
+      <h3>Paris</h3>
+    </div>
+    <div class="place" onclick="openPopup('kyoto')">
+      <img src="images/kyoto.jpg" alt="Kyoto">
+      <h3>Kyoto</h3>
+    </div>
+    <div class="place" onclick="openPopup('cairo')">
+      <img src="images/cairo.jpg" alt="Cairo">
+      <h3>Cairo</h3>
+    </div>
+    <div class="place" onclick="openPopup('newyork')">
+      <img src="images/newyork.jpg" alt="New York">
+      <h3>New York</h3>
+    </div>
+    <div class="place" onclick="openPopup('rome')">
+      <img src="images/rome.jpg" alt="Rome">
+      <h3>Rome</h3>
+    </div>
+    <div class="place" onclick="openPopup('bali')">
+      <img src="images/bali.jpg" alt="Bali">
+      <h3>Bali</h3>
+    </div>
+    <div class="place" onclick="openPopup('santorini')">
+      <img src="images/santorini.jpg" alt="Santorini">
+      <h3>Santorini</h3>
+    </div>
+  </section>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="closePopup" onclick="closePopup()">✖️</span>
+      <div id="popupInfo"></div>
+    </div>
+  </div>
+</body>
+</html>
